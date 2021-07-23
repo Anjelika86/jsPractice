@@ -41,3 +41,28 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log(arr2);
+
+const arr3 = [1, 2, 3];
+const arr4 = [4, 5, 6];
+const arr5 = arr3.concat(arr4);
+console.log(arr5);
+
+const reversed = arr3.reverse();
+console.log(reversed);
+
+const arr6 = [1, 2, 3];
+const arr7 = [1, 2, 3];
+arr6.push(4, 5, 6);
+arr7.unshift(4, 5, 6);
+console.log(arr6);
+console.log(arr7);
+
+const arrShift = ["js", "css", "jq"];
+console.log(arrShift[0]);
+arrShift.shift();
+console.log(arrShift);
+
+const arrPop = ["js", "css", "jq"];
+console.log(arrPop[2]);
+arrPop.pop();
+console.log(arrPop);
