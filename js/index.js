@@ -30,13 +30,14 @@ const arifmaticMean = function (arr1) {
 };
 console.log(arifmaticMean(arr1));
 
-const randomNumber = function () {
-  return Math.round(Math.random() * 100);
+const randomNumber = function (min, max) {
+  return Math.round(Math.random() * (max - min) + min);
 };
+console.log(randomNumber(1, 100));
 
 const arr2 = [];
 for (let i = 0; i < 10; i++) {
-  arr2[i] = randomNumber();
+  arr2[i] = randomNumber(1, 100);
 }
 
 console.log(arr2);
